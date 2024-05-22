@@ -1,0 +1,52 @@
+.about-section {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+  }
+  
+  .project-heading {
+    font-size: 2.1em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .purple {
+    color: #6c63ff;  /* Adjust this color to your preference */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .about-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .quote-card-view {
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(155 126 172);
+  }
+  
+  .about-activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
