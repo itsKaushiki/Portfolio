@@ -8,7 +8,10 @@ import gdsc from "../../Assets/Projects/gdsc.png";
 import travel from "../../Assets/Projects/travel.png";
 import weather from "../../Assets/Projects/weather.png";
 import codepen from "../../Assets/Projects/codepen.png";
-
+import expense from "../../Assets/Projects/expenseimg.png";
+import invicta from "../../Assets/Projects/invicta.png";
+import notes from "../../Assets/Projects/notesimg.png";
+import stock from "../../Assets/Projects/stockimg.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,14 +24,44 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={notes}
+              isBlog={false}
+              title="NotesShala"
+              description="MERN project to make sharing of notes easier. Notes of all branches and semesters are available here."
+              ghLink="https://github.com/itsKaushiki/NotesShala"
+              demoLink="https://notes-shala-eight.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chat}
+              imgPath={expense}
               isBlog={false}
-              title="Chat-React-App"
-              description="Chat App to share messages and images among registered users."
-              ghLink="https://github.com/itsKaushiki/ChatReactApp"
-              demoLink="https://6624a411427b5f723530f48e--precious-blancmange-8bd8b0.netlify.app/"
+              title="Expense Tracker"
+              description="Mern project to add,view and track personal expenses. Designed and developed this app using React for frontend and MongoDB Atlas for data storage."
+              ghLink="https://github.com/itsKaushiki/expense_tracker"
+              demoLink="https://expense-tracker-334h.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={stock}
+              isBlog={false}
+              title="Stock_price"
+              description="Machine Learning Project to predict Stock Prices using Python."
+              ghLink="https://github.com/itsKaushiki/StockPrice_detector"
+          
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={invicta}
+              isBlog={false}
+              title="Invicta Website"
+              description="Team Collaboration to develop the official Invicta website.Frontend includes NextJs and its a MERN project."
+              ghLink="https://github.com/itsKaushiki/quod-invicta-website/tree/main"
+              demoLink="https://quod-invicta.vercel.app/"
             />
           </Col>
 
